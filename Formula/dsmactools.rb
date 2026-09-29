@@ -1,15 +1,9 @@
 class Dsmactools < Formula
   desc "Controller workbench for Mac game developers"
   homepage "https://github.com/olliejudge/dsmactools"
-  url "https://github.com/olliejudge/dsmactools/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "254e4207d99b7410c6f6b4f84ab23b631c782b3a68b4799e6984550c4f9717a9"
+  url "https://github.com/olliejudge/dsmactools/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "3c027f826dfaad7a03633a7e849f5d866c011050a54f25a10afc3ecdba70cf31"
   license "MIT"
-
-  bottle do
-    root_url "https://github.com/olliejudge/dsmactools/releases/download/v0.3.1"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: "6dfb57bb476f2c6df5287d09ccc0e5d4512a6b413a6d247deeb1b84bcb504399"
-    sha256 cellar: :any_skip_relocation, tahoe:       "f12a64bfaea3e2af939354d9d5fcae3b6ccda8fd63be8cab26d8fc5c36e07644"
-  end
 
   env :std if Hardware::CPU.intel?
 
