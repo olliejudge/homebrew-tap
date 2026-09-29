@@ -5,6 +5,11 @@ class Dsmactools < Formula
   sha256 "254e4207d99b7410c6f6b4f84ab23b631c782b3a68b4799e6984550c4f9717a9"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/olliejudge/dsmactools/releases/download/v0.3.1"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "6dfb57bb476f2c6df5287d09ccc0e5d4512a6b413a6d247deeb1b84bcb504399"
+  end
+
   env :std if Hardware::CPU.intel?
 
   depends_on "rust" => :build
