@@ -8,6 +8,7 @@ class Dsmactools < Formula
   bottle do
     root_url "https://github.com/olliejudge/dsmactools/releases/download/v0.3.1"
     sha256 cellar: :any_skip_relocation, arm64_tahoe: "6dfb57bb476f2c6df5287d09ccc0e5d4512a6b413a6d247deeb1b84bcb504399"
+    sha256 cellar: :any_skip_relocation, tahoe:       "f12a64bfaea3e2af939354d9d5fcae3b6ccda8fd63be8cab26d8fc5c36e07644"
   end
 
   env :std if Hardware::CPU.intel?
