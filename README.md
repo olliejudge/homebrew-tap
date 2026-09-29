@@ -6,11 +6,14 @@ A controller workbench for Mac game developers: live inputs, test recordings, fe
 
 ```sh
 brew tap olliejudge/tap
+brew trust --formula olliejudge/tap/dsmactools
 brew install dsmactools
 dsmactools
 ```
 
-Or install directly with `brew install olliejudge/tap/dsmactools`.
+The trust step authorizes only this formula on Homebrew versions with tap trust checks. Older versions without `brew trust` can skip it.
+
+Once trusted, install directly with `brew install olliejudge/tap/dsmactools`.
 
 [Project and documentation](https://github.com/olliejudge/dsmactools)
 
