@@ -15,6 +15,6 @@ class Dsmactools < Formula
   test do
     assert_match "dsmactools #{version}", shell_output("#{bin}/dsmactools --version")
     assert_match "DS Mac Tools", shell_output("#{bin}/dsmactools --help")
-    assert_match "needs a terminal", shell_output("#{bin}/dsmactools --interactive", 1)
+    assert_match "needs a terminal", shell_output("#{bin}/dsmactools --interactive 2>&1", 1)
   end
 end
