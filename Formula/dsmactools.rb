@@ -1,8 +1,8 @@
 class Dsmactools < Formula
   desc "Controller workbench for Mac game developers"
   homepage "https://github.com/olliejudge/dsmactools"
-  url "https://github.com/olliejudge/dsmactools/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "c8d3a89e661b33fb405212129d30de38c8d5a24935c9910e321467ceb23f4ec9"
+  url "https://github.com/olliejudge/dsmactools/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "254e4207d99b7410c6f6b4f84ab23b631c782b3a68b4799e6984550c4f9717a9"
   license "MIT"
 
   depends_on "rust" => :build
