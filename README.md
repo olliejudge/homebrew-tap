@@ -22,8 +22,12 @@ Once trusted, install directly with `brew install olliejudge/tap/dsmactools`.
 A live map of your Git repository across worktrees.
 
 ```sh
+brew tap olliejudge/tap
+brew trust --cask olliejudge/tap/orion-cli
 brew install --cask olliejudge/tap/orion-cli
 ```
+
+As with DS Mac Tools, the trust step authorizes only this cask; older Homebrew versions without `brew trust` can skip it.
 
 The cask is `orion-cli` (the command it installs is still `orion`), because Homebrew's own `orion` cask is the Kagi Orion browser. Always use the full name `olliejudge/tap/orion-cli`: a bare `brew install orion` or `brew upgrade orion` gets the browser.
 
