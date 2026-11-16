@@ -11,7 +11,7 @@ class Dsmactools < Formula
     sha256 cellar: :any_skip_relocation, tahoe:       "4efb4d955a78318908661b02822c3be64426a2041aafe686f1cd8841c3798701"
   end
 
-  env :std if Hardware::CPU.intel?
+  env :std
 
   depends_on "rust" => :build
   depends_on :macos
